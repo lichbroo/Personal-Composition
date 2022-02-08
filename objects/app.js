@@ -17,12 +17,23 @@ let objCircle = {
     x: 300,
     y: 100,
     size: 50,
-    offsetX: 100,
+    offsetX: 0,
+}
+
+function mousePressed() {
+    
 }
 
 function draw() {
-    circle(objCircle.x, objCircle.y, objCircle.size);
+
+    circle(objCircle.x, objCircle.y, objCircle.size, objCircle.offsetX);
+    
     if(mousePressed) {
-        objCircle.offsetX = -1;
+        objCircle.offsetX -= 1;
+    }
+    else {
+        objCircle.offsetX += 1;
     }
 }
+
+console.log(offsetX);
