@@ -5,4 +5,6 @@ function logText() {
     let txtWord = txtName.value;
     let word = `${txtWord} ${txtWord} ${txtWord}`;
     dvWordOutput.innerHTML = word;
+
+    txtName.value =""
 }
